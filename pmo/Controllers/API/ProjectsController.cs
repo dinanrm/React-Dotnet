@@ -16,7 +16,7 @@ namespace pmo.Controllers.API
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ProjectsController : ControllerBase
     {
         private readonly pmo_dbContext _context;
