@@ -1,0 +1,42 @@
+html, body, #root {
+    height: 100%;
+    min-height: 100%;
+  }
+
+.bg-purple{
+  background-color: #2E2E76;
+}
+
+.bg-main-color{
+  background-color: #CF8633;
+}
+
+.bg-lead-color{
+  background-color: #302E76;
+}
+
+.bg-disabled{
+  background-color: #e9ecef !important;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+}
+
+/* fix react-datepicker cant fit width */
+.react-datepicker__input-container {
+  width: inherit;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+/*=====================================*/
+
+/* fix react-datepicker hide behind component */
+
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}
+
+/* ============================================ */
