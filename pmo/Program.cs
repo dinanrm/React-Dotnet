@@ -19,6 +19,10 @@ namespace pmo
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                //.UseSetting("https_port", "5000")
+                .UseUrls("http://*:5000/");
+                //.UseUrls("https://*:5000/");
+                //.UseUrls("http://*:5000/;https://*:5002");
     }
 }
